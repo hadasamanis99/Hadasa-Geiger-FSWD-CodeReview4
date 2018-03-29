@@ -1,0 +1,116 @@
+body{
+	color: 	#000000;
+	background-image: url(img/pic3.jpg);
+	background-size:cover;
+}
+
+.align1 {
+    text-align: center;
+    padding: 80px;
+    font-size: 25px;
+    color: white;
+
+}
+
+.box-onebackground {
+    background-color: #FFFACD;
+    border: 15px #40E0D0;
+    padding: 25px;
+    margin: 25px;
+}
+.box-one{
+	display: inline-block;
+	background: #E0FFFF;
+	height: 400px;
+	width: 27%;
+	margin-left: 90px;
+	border-radius: 2px 140px 20px 60px;
+	position: relative;
+    margin: 1%;
+    float: left;
+}
+
+.box-two{
+	display: inline-block;
+	background: #FFE4C4;
+	height: 400px;
+	width: 27%;
+	margin-right: 90px;
+	border-radius: 2px 140px 20px 60px;
+	position: relative;
+    margin: 1%;
+    float: left;
+    
+}
+
+.box-twobackground {
+    background-color: #E6E6FA;
+    border: 15px #40E0D0;
+    padding: 25px;
+    margin: 25px;
+}
+
+.box-three{
+	display: inline-block;
+	background:  #FFE4E1;
+	height: 400px;
+	width: 27%;
+	margin-right: 90px;
+	border-radius: 2px 140px 20px 60px;
+	position: relative;
+    margin: 1%;
+    float: left;
+    
+}
+
+.box-threebackground {	
+    background-color:  	#FFE4E1;
+    border: 15px #40E0D0;
+    padding: 25px;
+    margin: 25px;
+}
+
+.box-one {
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 50%;
+  }
+
+  }
+.box-two {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+.box-three {
+  animation-duration: 4s;
+  animation-name: slidein;
+}
+.ul{
+    list-style-type: square;
+}
+
+a:link, a:visited {
+    background-color:  #0000FF;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+a:hover, a:active {
+    background-color: #40E0D0;
+}
+

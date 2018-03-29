@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link href="styles.css" rel="stylesheet" type="text/css">
+<style>
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 53px;
+    background-color: #ccddff;
+    padding: 2%;
+    margin-top: 30%;
+    width: 40%;
+    float: left;
+    margin: 2%;
+
+}
+
+#contactinfo{
+    float: left;
+    margin-left: 3%;
+    width: 45%;
+    color: #e2c0c7;
+
+}
+
+#contactwrapper{
+    
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 15%
+}
+
+#buttonsubmit{
+    width: 80%;
+    height: 45%;
+    margin-left: 10%;
+    background-color: #f4c8c8;
+    color: #484141;
+    border-radius: 80px;
+    font-size: 1.5em;
+}
+
+#sumbitresult{
+    color:#e2c0c7 ;
+    margin-bottom: 20%
+}
+
+</style>
+<title>Contact</title>
+</head>
+<body>
+
+    <div id="header">
+    <div id="logo"><a href="file:///D:/project1/omar11-master/index.html"><img src="img/1.png" width="130px"></a></a></div>
+    <ul id="main-menu">
+        <li><a href="file:///D:/project1/FSWD30-Hadasa-P1/aboutus.html">About Us</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="links.html">Links</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact_form.html">Contact</a></li>
+    </ul>
+</div>
+
+
+<div id="contactwrapper">
+<div class="container">
+  
+    <label for="firstname">First Name</label>
+    <input type="text" id="firstname" name="firstname" placeholder="Your name..">
+
+    <label for="lastname">Last Name</label>
+    <input type="text" id="lastname" name="lastname" placeholder="Your last name..">
+
+    <label for="enquiry">Type of enquiry</label>
+    <select id="enquirytype" name="enquiry">
+      <option id="pricequote">Get Quote</option>
+      <option id="jobs">Jobs</option>
+      <option id="other">Questions</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <button onclick="getSubmit()" id="buttonsubmit" value="Submit"><b>Submit</b></button>
+  </form>
+</div>
+
+<div id="contactinfo">
+    <h1>Moonshine </h1>
+    <h2><p>Kettenbrückengasse 35/120
+    <br>1040, Wien</p>
+    <p>@@ office@moonshine.com</p>
+    <p>## 01 / 548 3978</p></h2>
+    <br>
+
+
+    
+    <div id="submitresult"></div>
+    </div>
+
+    
+
+
+
+
+<script>
+    
+function getSubmit(){
+   
+    var firstname = document.getElementById("firstname").value;
+    var lastname = document.getElementById("lastname").value;
+    document.getElementById("submitresult").innerHTML = "<h2>" + firstname + " " + lastname + "</h2>" + "<br>we are sorry to inform you that we are still learning how to save this contact data. Please email us at office@moonshine.com ";
+    
+    } 
+
+
+</script>
+
+</body>
+</html>
